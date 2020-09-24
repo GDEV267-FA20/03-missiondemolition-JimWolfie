@@ -5,15 +5,21 @@ using UnityEngine;
 public class Slingshot : MonoBehaviour
 {
     //will switch to new input system when I have time. 
+    public GameObject launchPoint;
 
-   
-   
-    private void OnMouseEnter()
+
+    void Awake()
     {
-
+        Transform launchPointTransform = transform.Find("Launch");
+        launchPoint = launchPointTransform.gameObject;
+        launchPoint.SetActive(false);
     }
-    private void OnMouseExit()
+    void OnMouseEnter()
     {
-        
+        launchPoint.SetActive(true);
+    }
+    void OnMouseExit()
+    {
+        launchPoint.SetActive(false);
     }
 }

@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 1010306020}
   - component: {fileID: 1010306021}
   m_Layer: 0
-  m_Name: Launch_Point(Empty)
+  m_Name: Launch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

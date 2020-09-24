@@ -527,7 +527,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799126806}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 227922502432af043a36a19f0454f59c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -658,7 +658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 394515758575126801, guid: cc559c271754bb049bad9800668829ac, type: 3}
-  velocityMult: 25
+  velocityMult: 10
   launchPoint: {fileID: 0}
   launchPos: {x: 0, y: 0, z: 0}
   projectile: {fileID: 0}
@@ -759,4 +759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18437193d41c2c479cc608f79ff21aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  easing: 0.05
+  minXY: {x: 0, y: 0}
   camZ: 0

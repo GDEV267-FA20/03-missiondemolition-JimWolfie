@@ -45,7 +45,7 @@ public class Slingshot : MonoBehaviour
     {
         if(!aimMode)return;
         Vector3 mouse2D = Input.mousePosition;
-        mouse2D.z = Camera.main.transform.position.z;
+        mouse2D.z = -Camera.main.transform.position.z;
         Vector3 mouse3D = Camera.main.ScreenToWorldPoint(mouse2D);
 
         Vector3 mDelta = mouse3D - launchPos;
